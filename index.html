@@ -161,7 +161,11 @@
                 margin-right: 2%; /* Distanza tra l'immagine e il testo */
             }
 
-
+            #skarra {
+                font-weight: lighter;
+                font-style: italic;
+                margin-left: 10%
+            }
 
 
 @media only screen and (max-width: 1100px) {
@@ -171,9 +175,9 @@
 .container-iti { 
            
             width: 87% !important ;      /* o qualsiasi altra larghezza */
-    height: 80% !important ;
+    height: 70% !important ;
     margin-bottom: 0% !important ;
-    margin-top: 20% !important;
+    margin-top: -5% !important;
     }
 
     .legenda-container p {
@@ -188,8 +192,15 @@
 
     .map-container {
         width: 90%;
-        height: 90%
+        height: 45% !important
     }    
+
+ul.image-legenda {
+                list-style: none; /* Rimuove i bullet points */
+                padding: 0% ;
+                width: 80%;
+                margin-left: 40%;
+                margin-top: %;}
 
 ul.image-legenda li {
                 display: flex; /* Crea un layout flessibile per ogni elemento della lista */
@@ -242,7 +253,7 @@ ul.image-legenda li {
         <div class="map-container">
             <!-- Qui va inserita la mappa di My Maps -->
              <iframe src="https://www.google.com/maps/d/embed?mid=1x4bqTAnJ8ciPQYFHNJbO9FCPIbV0GWg&ehbc=2E312F" width="140%" height="90%"></iframe>
-            <p>Skarra c'è anche se non c'è</p>
+            
 
         </div>  
         <div class="legenda-container">
@@ -259,6 +270,8 @@ ul.image-legenda li {
                 <li><img src="trasporti.JPG" alt="Descrizione 3"> <span>TRASPORTI e altre diavolerie</span></li>
                 <li><img src="shopping.JPG" alt="Descrizione 3"> <span>SHOPPING VARIO (Auchan)</span></li>
                 <li><img src="shopingfoto.JPG" alt="Descrizione 3"> <span>negozietti di fotografia</span></li>
+                <li><span id="skarra">Skarra c'è anche se non c'è</span></li>
+             
               
             </ul>
        
